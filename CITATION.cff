@@ -22,4 +22,5 @@ preferred-citation:
     - family-names: "Zhang"
       given-names: "Ruiyang"
   year: 2026
-  url: "https://arxiv.org/abs/REPLACE-WITH-ARXIV-ID"
+  doi: "10.5281/zenodo.20564877"
+  url: "https://doi.org/10.5281/zenodo.20564877"

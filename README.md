@@ -2,7 +2,7 @@
 
 **Do AI agents act correctly when users speak Chinese?** When an agent fills a tool call, the argument *value is the action*: 转一万二 ("transfer twelve thousand") must become `transfer(12000)` — not `transfer(10002)`; 两斤苹果 ("two jin of apples") must become `order(weight_kg=1.0)` — not `2`. ZhToolLocale shows that today's LLMs **silently corrupt these values**: the JSON validates, the API returns 200, and the user finds out when the train ticket is for the wrong day. This repository is the benchmark that measures it, the detector that flags it, and the deterministic fix that prevents it.
 
-📄 **Paper:** [Silent Locale Corruption: Diagnosing and Mitigating Chinese-Locale Semantic Failures in LLM Tool Calling](https://arxiv.org/abs/REPLACE-WITH-ARXIV-ID)
+📄 **Paper:** [Silent Locale Corruption: Diagnosing and Mitigating Chinese-Locale Semantic Failures in LLM Tool Calling](https://doi.org/10.5281/zenodo.20564877)
 
 ---
 
@@ -85,9 +85,7 @@ repro_manifest.md   pinned model versions, endpoints, access dates, library vers
   title  = {Silent Locale Corruption: Diagnosing and Mitigating Chinese-Locale Semantic Failures in LLM Tool Calling},
   author = {Ruiyang Zhang},
   year   = {2026},
-  eprint = {REPLACE-WITH-ARXIV-ID},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CL},
+  doi    = {10.5281/zenodo.20564877},
   url    = {https://github.com/ryonzhang/zhtoollocale}
 }
 ```
