@@ -1,0 +1,2075 @@
+{
+ "model": "gemini-2.5-flash",
+ "cond": "forced",
+ "n": 99,
+ "correct": 96,
+ "errored": 0,
+ "routed": 95,
+ "total": 99,
+ "rows": [
+  {
+   "id": "f-L01-a",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-06-19"
+   },
+   "gold": {
+    "date": "2026-06-19"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_year": 2026,
+      "lunar_day": 5,
+      "lunar_month": 5
+     },
+     "result": "2026-06-19"
+    }
+   ]
+  },
+  {
+   "id": "f-L01-b",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-06-19"
+   },
+   "gold": {
+    "date": "2026-06-19"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 5,
+      "lunar_year": 2026,
+      "lunar_month": 5
+     },
+     "result": "2026-06-19"
+    }
+   ]
+  },
+  {
+   "id": "f-L01-c",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-06-19"
+   },
+   "gold": {
+    "date": "2026-06-19"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 5,
+      "lunar_year": 2026,
+      "lunar_month": 5
+     },
+     "result": "2026-06-19"
+    }
+   ]
+  },
+  {
+   "id": "f-L02-a",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-09-25"
+   },
+   "gold": {
+    "date": "2026-09-25"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 15,
+      "lunar_month": 8,
+      "lunar_year": 2026
+     },
+     "result": "2026-09-25"
+    }
+   ]
+  },
+  {
+   "id": "f-L02-b",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-09-25"
+   },
+   "gold": {
+    "date": "2026-09-25"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_month": 8,
+      "lunar_year": 2026,
+      "lunar_day": 15
+     },
+     "result": "2026-09-25"
+    }
+   ]
+  },
+  {
+   "id": "f-L02-c",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-09-25"
+   },
+   "gold": {
+    "date": "2026-09-25"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_year": 2026,
+      "lunar_month": 8,
+      "lunar_day": 15
+     },
+     "result": "2026-09-25"
+    }
+   ]
+  },
+  {
+   "id": "f-L03-a",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-10-18"
+   },
+   "gold": {
+    "date": "2026-10-18"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_year": 2026,
+      "lunar_day": 9,
+      "lunar_month": 9
+     },
+     "result": "2026-10-18"
+    }
+   ]
+  },
+  {
+   "id": "f-L03-b",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-10-18"
+   },
+   "gold": {
+    "date": "2026-10-18"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_month": 9,
+      "lunar_day": 9,
+      "lunar_year": 2026
+     },
+     "result": "2026-10-18"
+    }
+   ]
+  },
+  {
+   "id": "f-L03-c",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-10-18"
+   },
+   "gold": {
+    "date": "2026-10-18"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 9,
+      "lunar_month": 9,
+      "lunar_year": 2026
+     },
+     "result": "2026-10-18"
+    }
+   ]
+  },
+  {
+   "id": "f-L04-a",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-08-19"
+   },
+   "gold": {
+    "date": "2026-08-19"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_month": 7,
+      "lunar_year": 2026,
+      "lunar_day": 7
+     },
+     "result": "2026-08-19"
+    }
+   ]
+  },
+  {
+   "id": "f-L04-b",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-08-19"
+   },
+   "gold": {
+    "date": "2026-08-19"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_year": 2026,
+      "lunar_day": 7,
+      "lunar_month": 7
+     },
+     "result": "2026-08-19"
+    }
+   ]
+  },
+  {
+   "id": "f-L04-c",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-08-19"
+   },
+   "gold": {
+    "date": "2026-08-19"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_month": 7,
+      "lunar_day": 7,
+      "lunar_year": 2026
+     },
+     "result": "2026-08-19"
+    }
+   ]
+  },
+  {
+   "id": "f-L05-a",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-02-06"
+   },
+   "gold": {
+    "date": "2027-02-06"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 1,
+      "lunar_year": 2027,
+      "lunar_month": 1
+     },
+     "result": "2027-02-06"
+    }
+   ]
+  },
+  {
+   "id": "f-L05-b",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-02-06"
+   },
+   "gold": {
+    "date": "2027-02-06"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_year": 2027,
+      "lunar_month": 1,
+      "lunar_day": 1
+     },
+     "result": "2027-02-06"
+    }
+   ]
+  },
+  {
+   "id": "f-L05-c",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-02-06"
+   },
+   "gold": {
+    "date": "2027-02-06"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_month": 1,
+      "lunar_day": 1,
+      "lunar_year": 2027
+     },
+     "result": "2027-02-06"
+    }
+   ]
+  },
+  {
+   "id": "f-L06-a",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-02-20"
+   },
+   "gold": {
+    "date": "2027-02-20"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 15,
+      "lunar_year": 2027,
+      "lunar_month": 1
+     },
+     "result": "2027-02-20"
+    }
+   ]
+  },
+  {
+   "id": "f-L06-b",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-02-20"
+   },
+   "gold": {
+    "date": "2027-02-20"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_year": 2027,
+      "lunar_day": 15,
+      "lunar_month": 1
+     },
+     "result": "2027-02-20"
+    }
+   ]
+  },
+  {
+   "id": "f-L06-c",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-02-20"
+   },
+   "gold": {
+    "date": "2027-02-20"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 15,
+      "lunar_month": 1,
+      "lunar_year": 2027
+     },
+     "result": "2027-02-20"
+    }
+   ]
+  },
+  {
+   "id": "f-L07-a",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2028-01-04"
+   },
+   "gold": {
+    "date": "2027-01-15"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_month": 12,
+      "lunar_year": 2027,
+      "lunar_day": 8
+     },
+     "result": "2028-01-04"
+    }
+   ]
+  },
+  {
+   "id": "f-L07-b",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2028-01-04"
+   },
+   "gold": {
+    "date": "2027-01-15"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 8,
+      "lunar_month": 12,
+      "lunar_year": 2027
+     },
+     "result": "2028-01-04"
+    }
+   ]
+  },
+  {
+   "id": "f-L07-c",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2028-01-04"
+   },
+   "gold": {
+    "date": "2027-01-15"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_month": 12,
+      "lunar_day": 8,
+      "lunar_year": 2027
+     },
+     "result": "2028-01-04"
+    }
+   ]
+  },
+  {
+   "id": "f-L08-a",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-09-15"
+   },
+   "gold": {
+    "date": "2027-09-15"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_month": 8,
+      "lunar_day": 15,
+      "lunar_year": 2027
+     },
+     "result": "2027-09-15"
+    }
+   ]
+  },
+  {
+   "id": "f-L08-b",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-09-15"
+   },
+   "gold": {
+    "date": "2027-09-15"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 15,
+      "lunar_month": 8,
+      "lunar_year": 2027
+     },
+     "result": "2027-09-15"
+    }
+   ]
+  },
+  {
+   "id": "f-L08-c",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-09-15"
+   },
+   "gold": {
+    "date": "2027-09-15"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_year": 2027,
+      "lunar_day": 15,
+      "lunar_month": 8
+     },
+     "result": "2027-09-15"
+    }
+   ]
+  },
+  {
+   "id": "f-L09-a",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-06-09"
+   },
+   "gold": {
+    "date": "2027-06-09"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 5,
+      "lunar_year": 2027,
+      "lunar_month": 5
+     },
+     "result": "2027-06-09"
+    }
+   ]
+  },
+  {
+   "id": "f-L09-b",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-06-09"
+   },
+   "gold": {
+    "date": "2027-06-09"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_year": 2027,
+      "lunar_month": 5,
+      "lunar_day": 5
+     },
+     "result": "2027-06-09"
+    }
+   ]
+  },
+  {
+   "id": "f-L09-c",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-06-09"
+   },
+   "gold": {
+    "date": "2027-06-09"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 5,
+      "lunar_year": 2027,
+      "lunar_month": 5
+     },
+     "result": "2027-06-09"
+    }
+   ]
+  },
+  {
+   "id": "f-L10-a",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-07-14"
+   },
+   "gold": {
+    "date": "2026-07-14"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 1,
+      "lunar_month": 6,
+      "lunar_year": 2026
+     },
+     "result": "2026-07-14"
+    }
+   ]
+  },
+  {
+   "id": "f-L10-b",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-07-14"
+   },
+   "gold": {
+    "date": "2026-07-14"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_year": 2026,
+      "lunar_day": 1,
+      "lunar_month": 6
+     },
+     "result": "2026-07-14"
+    }
+   ]
+  },
+  {
+   "id": "f-L10-c",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2026-07-14"
+   },
+   "gold": {
+    "date": "2026-07-14"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_year": 2026,
+      "lunar_day": 1,
+      "lunar_month": 6
+     },
+     "result": "2026-07-14"
+    }
+   ]
+  },
+  {
+   "id": "f-L11-a",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-04-09"
+   },
+   "gold": {
+    "date": "2027-04-09"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 3,
+      "lunar_year": 2027,
+      "lunar_month": 3
+     },
+     "result": "2027-04-09"
+    }
+   ]
+  },
+  {
+   "id": "f-L11-b",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-04-09"
+   },
+   "gold": {
+    "date": "2027-04-09"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_year": 2027,
+      "lunar_month": 3,
+      "lunar_day": 3
+     },
+     "result": "2027-04-09"
+    }
+   ]
+  },
+  {
+   "id": "f-L11-c",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2027-04-09"
+   },
+   "gold": {
+    "date": "2027-04-09"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 3,
+      "lunar_month": 3,
+      "lunar_year": 2027
+     },
+     "result": "2027-04-09"
+    }
+   ]
+  },
+  {
+   "id": "f-L12-a",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2028-07-07"
+   },
+   "gold": {
+    "date": "2028-07-07"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_year": 2028,
+      "lunar_day": 15,
+      "is_leap_month": true,
+      "lunar_month": 5
+     },
+     "result": "2028-07-07"
+    }
+   ]
+  },
+  {
+   "id": "f-L12-b",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2028-07-07"
+   },
+   "gold": {
+    "date": "2028-07-07"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_month": 5,
+      "is_leap_month": true,
+      "lunar_year": 2028,
+      "lunar_day": 15
+     },
+     "result": "2028-07-07"
+    }
+   ]
+  },
+  {
+   "id": "f-L12-c",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2028-07-07"
+   },
+   "gold": {
+    "date": "2028-07-07"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_month": 5,
+      "is_leap_month": true,
+      "lunar_day": 15,
+      "lunar_year": 2028
+     },
+     "result": "2028-07-07"
+    }
+   ]
+  },
+  {
+   "id": "f-L13-a",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2028-01-26"
+   },
+   "gold": {
+    "date": "2028-01-26"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_day": 1,
+      "lunar_month": 1,
+      "lunar_year": 2028
+     },
+     "result": "2028-01-26"
+    }
+   ]
+  },
+  {
+   "id": "f-L13-b",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2028-01-26"
+   },
+   "gold": {
+    "date": "2028-01-26"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_month": 1,
+      "lunar_year": 2028,
+      "lunar_day": 1
+     },
+     "result": "2028-01-26"
+    }
+   ]
+  },
+  {
+   "id": "f-L13-c",
+   "family": "lunar",
+   "status": "PASS",
+   "final": {
+    "date": "2028-01-26"
+   },
+   "gold": {
+    "date": "2028-01-26"
+   },
+   "calls": [
+    {
+     "tool": "lunar_to_gregorian",
+     "args": {
+      "lunar_year": 2028,
+      "lunar_month": 1,
+      "lunar_day": 1
+     },
+     "result": "2028-01-26"
+    }
+   ]
+  },
+  {
+   "id": "f-N01-a",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100500000
+   },
+   "gold": {
+    "amount_cny": 100500000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一亿零五十万"
+     },
+     "result": 100500000
+    }
+   ]
+  },
+  {
+   "id": "f-N01-b",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100500000
+   },
+   "gold": {
+    "amount_cny": 100500000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一亿零五十万元"
+     },
+     "result": 100500000
+    }
+   ]
+  },
+  {
+   "id": "f-N01-c",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100500000
+   },
+   "gold": {
+    "amount_cny": 100500000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一亿零五十万"
+     },
+     "result": 100500000
+    }
+   ]
+  },
+  {
+   "id": "f-N02-a",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100500.0
+   },
+   "gold": {
+    "amount_cny": 100500
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "十万零五百"
+     },
+     "result": 100500
+    }
+   ]
+  },
+  {
+   "id": "f-N02-b",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100500.0
+   },
+   "gold": {
+    "amount_cny": 100500
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "十万零五百"
+     },
+     "result": 100500
+    }
+   ]
+  },
+  {
+   "id": "f-N02-c",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100500
+   },
+   "gold": {
+    "amount_cny": 100500
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "十万零五百"
+     },
+     "result": 100500
+    }
+   ]
+  },
+  {
+   "id": "f-N03-a",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 10050
+   },
+   "gold": {
+    "amount_cny": 10050
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一万零五十"
+     },
+     "result": 10050
+    }
+   ]
+  },
+  {
+   "id": "f-N03-b",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 10050
+   },
+   "gold": {
+    "amount_cny": 10050
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一万零五十"
+     },
+     "result": 10050
+    }
+   ]
+  },
+  {
+   "id": "f-N03-c",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 10050
+   },
+   "gold": {
+    "amount_cny": 10050
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一万零五十"
+     },
+     "result": 10050
+    }
+   ]
+  },
+  {
+   "id": "f-N04-a",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 10005
+   },
+   "gold": {
+    "amount_cny": 10005
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一万零五"
+     },
+     "result": 10005
+    }
+   ]
+  },
+  {
+   "id": "f-N04-b",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 10005
+   },
+   "gold": {
+    "amount_cny": 10005
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一万零五"
+     },
+     "result": 10005
+    }
+   ]
+  },
+  {
+   "id": "f-N04-c",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 10005
+   },
+   "gold": {
+    "amount_cny": 10005
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一万零五"
+     },
+     "result": 10005
+    }
+   ]
+  },
+  {
+   "id": "f-N14-a",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100050000
+   },
+   "gold": {
+    "amount_cny": 100050000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一亿零五万"
+     },
+     "result": 100050000
+    }
+   ]
+  },
+  {
+   "id": "f-N14-b",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100050000
+   },
+   "gold": {
+    "amount_cny": 100050000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一亿零五万元"
+     },
+     "result": 100050000
+    }
+   ]
+  },
+  {
+   "id": "f-N14-c",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100050000
+   },
+   "gold": {
+    "amount_cny": 100050000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一亿零五万"
+     },
+     "result": 100050000
+    }
+   ]
+  },
+  {
+   "id": "f-N05-a",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 35000
+   },
+   "gold": {
+    "amount_cny": 35000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "三万五"
+     },
+     "result": 35000
+    }
+   ]
+  },
+  {
+   "id": "f-N05-b",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 35000
+   },
+   "gold": {
+    "amount_cny": 35000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "三万五"
+     },
+     "result": 35000
+    }
+   ]
+  },
+  {
+   "id": "f-N05-c",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 35000
+   },
+   "gold": {
+    "amount_cny": 35000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "三万五"
+     },
+     "result": 35000
+    }
+   ]
+  },
+  {
+   "id": "f-N06-a",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 2800
+   },
+   "gold": {
+    "amount_cny": 2800
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "两千八"
+     },
+     "result": 2800
+    }
+   ]
+  },
+  {
+   "id": "f-N06-b",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 2800.0
+   },
+   "gold": {
+    "amount_cny": 2800
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "两千八"
+     },
+     "result": 2800
+    }
+   ]
+  },
+  {
+   "id": "f-N06-c",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 2800
+   },
+   "gold": {
+    "amount_cny": 2800
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "两千八"
+     },
+     "result": 2800
+    }
+   ]
+  },
+  {
+   "id": "f-N07-a",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 120.0
+   },
+   "gold": {
+    "amount_cny": 120
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一百二"
+     },
+     "result": 120
+    }
+   ]
+  },
+  {
+   "id": "f-N07-b",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 120.0
+   },
+   "gold": {
+    "amount_cny": 120
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一百二"
+     },
+     "result": 120
+    }
+   ]
+  },
+  {
+   "id": "f-N07-c",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 120
+   },
+   "gold": {
+    "amount_cny": 120
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "一百二"
+     },
+     "result": 120
+    }
+   ]
+  },
+  {
+   "id": "f-N08-a",
+   "family": "capital",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 12000.0
+   },
+   "gold": {
+    "amount_cny": 12000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "壹万贰仟"
+     },
+     "result": 12000
+    }
+   ]
+  },
+  {
+   "id": "f-N08-b",
+   "family": "capital",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 12000
+   },
+   "gold": {
+    "amount_cny": 12000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "壹万贰仟"
+     },
+     "result": 12000
+    }
+   ]
+  },
+  {
+   "id": "f-N08-c",
+   "family": "capital",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 12000.0
+   },
+   "gold": {
+    "amount_cny": 12000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "壹万贰仟"
+     },
+     "result": 12000
+    }
+   ]
+  },
+  {
+   "id": "f-N09-a",
+   "family": "capital",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 350
+   },
+   "gold": {
+    "amount_cny": 350
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "叁佰伍拾"
+     },
+     "result": 350
+    }
+   ]
+  },
+  {
+   "id": "f-N09-b",
+   "family": "capital",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 350.0
+   },
+   "gold": {
+    "amount_cny": 350
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "叁佰伍拾"
+     },
+     "result": 350
+    }
+   ]
+  },
+  {
+   "id": "f-N09-c",
+   "family": "capital",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 350
+   },
+   "gold": {
+    "amount_cny": 350
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "叁佰伍拾"
+     },
+     "result": 350
+    }
+   ]
+  },
+  {
+   "id": "f-N10-a",
+   "family": "mixed_digit",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 120000000.0
+   },
+   "gold": {
+    "amount_cny": 120000000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "1.2亿"
+     },
+     "result": 120000000
+    }
+   ]
+  },
+  {
+   "id": "f-N10-b",
+   "family": "mixed_digit",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 120000000.0
+   },
+   "gold": {
+    "amount_cny": 120000000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "1.2亿元"
+     },
+     "result": 120000000
+    }
+   ]
+  },
+  {
+   "id": "f-N10-c",
+   "family": "mixed_digit",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 120000000.0
+   },
+   "gold": {
+    "amount_cny": 120000000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "1.2亿"
+     },
+     "result": 120000000
+    }
+   ]
+  },
+  {
+   "id": "f-N11-a",
+   "family": "mixed_digit",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 35000
+   },
+   "gold": {
+    "amount_cny": 35000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "3万5"
+     },
+     "result": 35000
+    }
+   ]
+  },
+  {
+   "id": "f-N11-b",
+   "family": "mixed_digit",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 35000
+   },
+   "gold": {
+    "amount_cny": 35000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "3万5"
+     },
+     "result": 35000
+    }
+   ]
+  },
+  {
+   "id": "f-N11-c",
+   "family": "mixed_digit",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 35000
+   },
+   "gold": {
+    "amount_cny": 35000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "3万5"
+     },
+     "result": 35000
+    }
+   ]
+  },
+  {
+   "id": "f-N12-a",
+   "family": "long_chain",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 230500000
+   },
+   "gold": {
+    "amount_cny": 230500000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "两亿三千零五十万"
+     },
+     "result": 230500000
+    }
+   ]
+  },
+  {
+   "id": "f-N12-b",
+   "family": "long_chain",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 230500000.0
+   },
+   "gold": {
+    "amount_cny": 230500000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "两亿三千零五十万元"
+     },
+     "result": 230500000
+    }
+   ]
+  },
+  {
+   "id": "f-N12-c",
+   "family": "long_chain",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 230500000
+   },
+   "gold": {
+    "amount_cny": 230500000
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "两亿三千零五十万"
+     },
+     "result": 230500000
+    }
+   ]
+  },
+  {
+   "id": "f-N13-a",
+   "family": "long_chain",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 1234567800
+   },
+   "gold": {
+    "amount_cny": 1234567800
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "十二亿三千四百五十六万七千八百"
+     },
+     "result": 1234567800
+    }
+   ]
+  },
+  {
+   "id": "f-N13-b",
+   "family": "long_chain",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 1234567800
+   },
+   "gold": {
+    "amount_cny": 1234567800
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "十二亿三千四百五十六万七千八百"
+     },
+     "result": 1234567800
+    }
+   ]
+  },
+  {
+   "id": "f-N13-c",
+   "family": "long_chain",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 1234567800
+   },
+   "gold": {
+    "amount_cny": 1234567800
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "十二亿三千四百五十六万七千八百"
+     },
+     "result": 1234567800
+    }
+   ]
+  },
+  {
+   "id": "f-U01-a",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 0.125
+   },
+   "gold": {
+    "weight_kg": 0.125
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "unit": "两",
+      "value": 2.5
+     },
+     "result": 0.125
+    }
+   ]
+  },
+  {
+   "id": "f-U01-b",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 0.125
+   },
+   "gold": {
+    "weight_kg": 0.125
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "unit": "两",
+      "value": 2.5
+     },
+     "result": 0.125
+    }
+   ]
+  },
+  {
+   "id": "f-U01-c",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 0.125
+   },
+   "gold": {
+    "weight_kg": 0.125
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "value": 2.5,
+      "unit": "两"
+     },
+     "result": 0.125
+    }
+   ]
+  },
+  {
+   "id": "f-U02-a",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 1.75
+   },
+   "gold": {
+    "weight_kg": 1.75
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "value": 3.5,
+      "unit": "斤"
+     },
+     "result": 1.75
+    }
+   ]
+  },
+  {
+   "id": "f-U02-b",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 1.75
+   },
+   "gold": {
+    "weight_kg": 1.75
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "value": 3.5,
+      "unit": "斤"
+     },
+     "result": 1.75
+    }
+   ]
+  },
+  {
+   "id": "f-U02-c",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 1.75
+   },
+   "gold": {
+    "weight_kg": 1.75
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "unit": "斤",
+      "value": 3.5
+     },
+     "result": 1.75
+    }
+   ]
+  },
+  {
+   "id": "f-U03-a",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 0.025
+   },
+   "gold": {
+    "weight_kg": 0.025
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "unit": "两",
+      "value": 0.5
+     },
+     "result": 0.025
+    }
+   ]
+  },
+  {
+   "id": "f-U03-b",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 0.025
+   },
+   "gold": {
+    "weight_kg": 0.025
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "value": 0.5,
+      "unit": "两"
+     },
+     "result": 0.025
+    }
+   ]
+  },
+  {
+   "id": "f-U03-c",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 0.025
+   },
+   "gold": {
+    "weight_kg": 0.025
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "value": 0.5,
+      "unit": "两"
+     },
+     "result": 0.025
+    }
+   ]
+  },
+  {
+   "id": "f-U04-a",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "height_m": 1.75
+   },
+   "gold": {
+    "height_m": 1.75
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U04-b",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "height_m": 1.75
+   },
+   "gold": {
+    "height_m": 1.75
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U04-c",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "height_m": 1.75
+   },
+   "gold": {
+    "height_m": 1.75
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U05-a",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 2.0
+   },
+   "gold": {
+    "weight_kg": 2.0
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U05-b",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 2.0
+   },
+   "gold": {
+    "weight_kg": 2.0
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "unit": "公斤",
+      "value": 2
+     },
+     "result": 2.0
+    }
+   ]
+  },
+  {
+   "id": "f-U05-c",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 2.0
+   },
+   "gold": {
+    "weight_kg": 2.0
+   },
+   "calls": [
+    {
+     "tool": "chinese_number_to_value",
+     "args": {
+      "text": "两"
+     },
+     "result": 2
+    },
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "value": 2,
+      "unit": "公斤"
+     },
+     "result": 2.0
+    }
+   ]
+  },
+  {
+   "id": "f-U06-a",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 1.0
+   },
+   "gold": {
+    "weight_kg": 1.0
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "value": 2,
+      "unit": "斤"
+     },
+     "result": 1.0
+    }
+   ]
+  },
+  {
+   "id": "f-U06-b",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 1.0
+   },
+   "gold": {
+    "weight_kg": 1.0
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "unit": "斤",
+      "value": 2
+     },
+     "result": 1.0
+    }
+   ]
+  },
+  {
+   "id": "f-U06-c",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 1.0
+   },
+   "gold": {
+    "weight_kg": 1.0
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "value": 2,
+      "unit": "斤"
+     },
+     "result": 1.0
+    }
+   ]
+  }
+ ],
+ "misrouting": [
+  [
+   "f-U05-c",
+   "units_half",
+   "wrong-tool",
+   {
+    "tool": "chinese_number_to_value",
+    "args": {
+     "text": "两"
+    },
+    "result": 2
+   }
+  ]
+ ]
+}

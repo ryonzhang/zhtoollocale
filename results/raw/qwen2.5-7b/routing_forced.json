@@ -1,0 +1,1233 @@
+{
+ "model": "qwen2.5:7b",
+ "cond": "forced",
+ "n": 99,
+ "correct": 47,
+ "errored": 0,
+ "routed": 3,
+ "total": 99,
+ "rows": [
+  {
+   "id": "f-L01-a",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-05-30"
+   },
+   "gold": {
+    "date": "2026-06-19"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L01-b",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-05-30"
+   },
+   "gold": {
+    "date": "2026-06-19"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L01-c",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-05-30"
+   },
+   "gold": {
+    "date": "2026-06-19"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L02-a",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-08-31"
+   },
+   "gold": {
+    "date": "2026-09-25"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L02-b",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-09-14"
+   },
+   "gold": {
+    "date": "2026-09-25"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L02-c",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-09-14"
+   },
+   "gold": {
+    "date": "2026-09-25"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L03-a",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-10-05"
+   },
+   "gold": {
+    "date": "2026-10-18"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L03-b",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-10-05"
+   },
+   "gold": {
+    "date": "2026-10-18"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L03-c",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-10-05"
+   },
+   "gold": {
+    "date": "2026-10-18"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L04-a",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-07-07"
+   },
+   "gold": {
+    "date": "2026-08-19"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L04-b",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-07-07"
+   },
+   "gold": {
+    "date": "2026-08-19"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L04-c",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-07-07"
+   },
+   "gold": {
+    "date": "2026-08-19"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L05-a",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-02-10"
+   },
+   "gold": {
+    "date": "2027-02-06"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L05-b",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-02-10"
+   },
+   "gold": {
+    "date": "2027-02-06"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L05-c",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-02-10"
+   },
+   "gold": {
+    "date": "2027-02-06"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L06-a",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-02-26"
+   },
+   "gold": {
+    "date": "2027-02-20"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L06-b",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-02-19"
+   },
+   "gold": {
+    "date": "2027-02-20"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L06-c",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-02-16"
+   },
+   "gold": {
+    "date": "2027-02-20"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L07-a",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-01-14"
+   },
+   "gold": {
+    "date": "2027-01-15"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L07-b",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-01-08"
+   },
+   "gold": {
+    "date": "2027-01-15"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L07-c",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-01-14"
+   },
+   "gold": {
+    "date": "2027-01-15"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L08-a",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-09-05"
+   },
+   "gold": {
+    "date": "2027-09-15"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L08-b",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-09-06"
+   },
+   "gold": {
+    "date": "2027-09-15"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L08-c",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-09-06"
+   },
+   "gold": {
+    "date": "2027-09-15"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L09-a",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-05-31"
+   },
+   "gold": {
+    "date": "2027-06-09"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L09-b",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-06-05"
+   },
+   "gold": {
+    "date": "2027-06-09"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L09-c",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-06-14"
+   },
+   "gold": {
+    "date": "2027-06-09"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L10-a",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-07-19"
+   },
+   "gold": {
+    "date": "2026-07-14"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L10-b",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-06-05"
+   },
+   "gold": {
+    "date": "2026-07-14"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L10-c",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2026-07-15"
+   },
+   "gold": {
+    "date": "2026-07-14"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L11-a",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-03-14"
+   },
+   "gold": {
+    "date": "2027-04-09"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L11-b",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-03-04"
+   },
+   "gold": {
+    "date": "2027-04-09"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L11-c",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2027-03-14"
+   },
+   "gold": {
+    "date": "2027-04-09"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L12-a",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2029-06-18"
+   },
+   "gold": {
+    "date": "2028-07-07"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L12-b",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2031-05-16"
+   },
+   "gold": {
+    "date": "2028-07-07"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L12-c",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2031-06-25"
+   },
+   "gold": {
+    "date": "2028-07-07"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L13-a",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2029-02-18"
+   },
+   "gold": {
+    "date": "2028-01-26"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L13-b",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2031-02-10"
+   },
+   "gold": {
+    "date": "2028-01-26"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-L13-c",
+   "family": "lunar",
+   "status": "FAIL",
+   "final": {
+    "date": "2029-02-18"
+   },
+   "gold": {
+    "date": "2028-01-26"
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N01-a",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100500000
+   },
+   "gold": {
+    "amount_cny": 100500000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N01-b",
+   "family": "internal_zero",
+   "status": "FAIL",
+   "final": {
+    "amount_cny": 10050
+   },
+   "gold": {
+    "amount_cny": 100500000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N01-c",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100500000
+   },
+   "gold": {
+    "amount_cny": 100500000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N02-a",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100500
+   },
+   "gold": {
+    "amount_cny": 100500
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N02-b",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100500
+   },
+   "gold": {
+    "amount_cny": 100500
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N02-c",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100500
+   },
+   "gold": {
+    "amount_cny": 100500
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N03-a",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 10050
+   },
+   "gold": {
+    "amount_cny": 10050
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N03-b",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 10050
+   },
+   "gold": {
+    "amount_cny": 10050
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N03-c",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 10050
+   },
+   "gold": {
+    "amount_cny": 10050
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N04-a",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 10005
+   },
+   "gold": {
+    "amount_cny": 10005
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N04-b",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 10005
+   },
+   "gold": {
+    "amount_cny": 10005
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N04-c",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 10005
+   },
+   "gold": {
+    "amount_cny": 10005
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N14-a",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100050000
+   },
+   "gold": {
+    "amount_cny": 100050000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N14-b",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100050000
+   },
+   "gold": {
+    "amount_cny": 100050000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N14-c",
+   "family": "internal_zero",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 100050000
+   },
+   "gold": {
+    "amount_cny": 100050000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N05-a",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 35000
+   },
+   "gold": {
+    "amount_cny": 35000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N05-b",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 35000
+   },
+   "gold": {
+    "amount_cny": 35000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N05-c",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 35000
+   },
+   "gold": {
+    "amount_cny": 35000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N06-a",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 2800
+   },
+   "gold": {
+    "amount_cny": 2800
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N06-b",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 2800
+   },
+   "gold": {
+    "amount_cny": 2800
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N06-c",
+   "family": "elliptical",
+   "status": "FAIL",
+   "final": {
+    "name": "set_amount",
+    "arguments": {
+     "amount_cny": 2800
+    }
+   },
+   "gold": {
+    "amount_cny": 2800
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N07-a",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 120
+   },
+   "gold": {
+    "amount_cny": 120
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N07-b",
+   "family": "elliptical",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 120
+   },
+   "gold": {
+    "amount_cny": 120
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N07-c",
+   "family": "elliptical",
+   "status": "FAIL",
+   "final": {
+    "amount_cny": 102
+   },
+   "gold": {
+    "amount_cny": 120
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N08-a",
+   "family": "capital",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 12000
+   },
+   "gold": {
+    "amount_cny": 12000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N08-b",
+   "family": "capital",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 12000
+   },
+   "gold": {
+    "amount_cny": 12000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N08-c",
+   "family": "capital",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 12000
+   },
+   "gold": {
+    "amount_cny": 12000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N09-a",
+   "family": "capital",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 350
+   },
+   "gold": {
+    "amount_cny": 350
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N09-b",
+   "family": "capital",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 350
+   },
+   "gold": {
+    "amount_cny": 350
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N09-c",
+   "family": "capital",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 350
+   },
+   "gold": {
+    "amount_cny": 350
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N10-a",
+   "family": "mixed_digit",
+   "status": "FAIL",
+   "final": {
+    "amount_cny": 12000
+   },
+   "gold": {
+    "amount_cny": 120000000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N10-b",
+   "family": "mixed_digit",
+   "status": "FAIL",
+   "final": {
+    "amount_cny": 12000
+   },
+   "gold": {
+    "amount_cny": 120000000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N10-c",
+   "family": "mixed_digit",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 120000000
+   },
+   "gold": {
+    "amount_cny": 120000000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N11-a",
+   "family": "mixed_digit",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 35000
+   },
+   "gold": {
+    "amount_cny": 35000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N11-b",
+   "family": "mixed_digit",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 35000
+   },
+   "gold": {
+    "amount_cny": 35000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N11-c",
+   "family": "mixed_digit",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 35000
+   },
+   "gold": {
+    "amount_cny": 35000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N12-a",
+   "family": "long_chain",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 230500000
+   },
+   "gold": {
+    "amount_cny": 230500000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N12-b",
+   "family": "long_chain",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 230500000
+   },
+   "gold": {
+    "amount_cny": 230500000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N12-c",
+   "family": "long_chain",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 230500000
+   },
+   "gold": {
+    "amount_cny": 230500000
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N13-a",
+   "family": "long_chain",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 1234567800
+   },
+   "gold": {
+    "amount_cny": 1234567800
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N13-b",
+   "family": "long_chain",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 1234567800
+   },
+   "gold": {
+    "amount_cny": 1234567800
+   },
+   "calls": []
+  },
+  {
+   "id": "f-N13-c",
+   "family": "long_chain",
+   "status": "PASS",
+   "final": {
+    "amount_cny": 1234567800
+   },
+   "gold": {
+    "amount_cny": 1234567800
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U01-a",
+   "family": "units_half",
+   "status": "FAIL",
+   "final": {
+    "weight_kg": 1.35
+   },
+   "gold": {
+    "weight_kg": 0.125
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U01-b",
+   "family": "units_half",
+   "status": "FAIL",
+   "final": {
+    "weight_kg": 2.5
+   },
+   "gold": {
+    "weight_kg": 0.125
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U01-c",
+   "family": "units_half",
+   "status": "FAIL",
+   "final": {
+    "weight_kg": 1.35
+   },
+   "gold": {
+    "weight_kg": 0.125
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U02-a",
+   "family": "units_half",
+   "status": "FAIL",
+   "final": {
+    "weight_kg": 3.5
+   },
+   "gold": {
+    "weight_kg": 1.75
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U02-b",
+   "family": "units_half",
+   "status": "FAIL",
+   "final": {
+    "weight_kg": 3.5
+   },
+   "gold": {
+    "weight_kg": 1.75
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U02-c",
+   "family": "units_half",
+   "status": "FAIL",
+   "final": {
+    "weight_kg": 3.85
+   },
+   "gold": {
+    "weight_kg": 1.75
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U03-a",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 0.025
+   },
+   "gold": {
+    "weight_kg": 0.025
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "value": 0.5,
+      "unit": "两"
+     },
+     "result": 0.025
+    }
+   ]
+  },
+  {
+   "id": "f-U03-b",
+   "family": "units_half",
+   "status": "FAIL",
+   "final": {
+    "weight_kg": 0.05
+   },
+   "gold": {
+    "weight_kg": 0.025
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U03-c",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 0.025
+   },
+   "gold": {
+    "weight_kg": 0.025
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "value": 0.5,
+      "unit": "两"
+     },
+     "result": 0.025
+    }
+   ]
+  },
+  {
+   "id": "f-U04-a",
+   "family": "units_half",
+   "status": "FAIL",
+   "final": {
+    "name": "set_profile",
+    "arguments": {
+     "height_m": 1.75
+    }
+   },
+   "gold": {
+    "height_m": 1.75
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U04-b",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "height_m": 1.75
+   },
+   "gold": {
+    "height_m": 1.75
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U04-c",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "height_m": 1.75
+   },
+   "gold": {
+    "height_m": 1.75
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U05-a",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 2
+   },
+   "gold": {
+    "weight_kg": 2.0
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U05-b",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 2
+   },
+   "gold": {
+    "weight_kg": 2.0
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U05-c",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 2
+   },
+   "gold": {
+    "weight_kg": 2.0
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U06-a",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 1
+   },
+   "gold": {
+    "weight_kg": 1.0
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U06-b",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 1
+   },
+   "gold": {
+    "weight_kg": 1.0
+   },
+   "calls": []
+  },
+  {
+   "id": "f-U06-c",
+   "family": "units_half",
+   "status": "PASS",
+   "final": {
+    "weight_kg": 1
+   },
+   "gold": {
+    "weight_kg": 1.0
+   },
+   "calls": [
+    {
+     "tool": "convert_to_kg",
+     "args": {
+      "value": 2,
+      "unit": "斤"
+     },
+     "result": 1.0
+    }
+   ]
+  }
+ ],
+ "misrouting": []
+}

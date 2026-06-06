@@ -1,0 +1,281 @@
+{
+ "benchmark": "ZhToolLocale-det20",
+ "description": "Focused failure-family set: lunar dates + numeral nesting + units/half, each base probe in 3 paraphrase variants (same gold). Golds: lunardate / ephem / deterministic arithmetic. reference 2026-06-05 Friday.",
+ "reference_date": "2026-06-05",
+ "reference_weekday": "Friday",
+ "layers": [
+  "arguments"
+ ],
+ "categories": [
+  "date_control",
+  "lunar_date",
+  "numeral_wan_yi",
+  "unit_conversion"
+ ],
+ "probes": [
+  {
+   "id": "f-L01-a",
+   "category": "lunar_date",
+   "family": "lunar",
+   "variant_group": "f-L01",
+   "layer": "arguments",
+   "utterance_zh": "今年端午节（农历五月初五）安排一场龙舟比赛。",
+   "tool": "schedule_event(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-06-19"
+   },
+   "gold_source": "lunardate lunar 2026-5-5 (端午)"
+  },
+  {
+   "id": "f-L02-a",
+   "category": "lunar_date",
+   "family": "lunar",
+   "variant_group": "f-L02",
+   "layer": "arguments",
+   "utterance_zh": "今年中秋节那天给家里订月饼。",
+   "tool": "schedule_event(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-09-25"
+   },
+   "gold_source": "lunardate lunar 2026-8-15 (中秋, name only)"
+  },
+  {
+   "id": "f-L05-a",
+   "category": "lunar_date",
+   "family": "lunar",
+   "variant_group": "f-L05",
+   "layer": "arguments",
+   "utterance_zh": "帮我订明年大年初一回老家的火车票。",
+   "tool": "schedule_event(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2027-02-06"
+   },
+   "gold_source": "lunardate lunar 2027-1-1 (大年初一, folk name, no hint)"
+  },
+  {
+   "id": "f-L10-a",
+   "category": "lunar_date",
+   "family": "lunar",
+   "variant_group": "f-L10",
+   "layer": "arguments",
+   "utterance_zh": "今年农历六月初一那天有个法会，记一下。",
+   "tool": "schedule_event(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-07-14"
+   },
+   "gold_source": "lunardate lunar 2026-6-1 (pure lunar date, no festival)"
+  },
+  {
+   "id": "f-L12-a",
+   "category": "lunar_date",
+   "family": "lunar",
+   "variant_group": "f-L12",
+   "layer": "arguments",
+   "utterance_zh": "后年农历闰五月十五那天有个仪式，帮我记下。",
+   "tool": "schedule_event(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2028-07-07"
+   },
+   "gold_source": "lunardate lunar 2028 leap-month run-5 day-15 (闰五月十五)",
+   "flag": "HARD: requires knowing 2028 has a leap 5th month. Gold from lunardate (闰5月15 -> 2028-07-07)."
+  },
+  {
+   "id": "f-C1-a",
+   "category": "date_control",
+   "family": "control",
+   "variant_group": "f-C1",
+   "layer": "arguments",
+   "utterance_zh": "明年清明节那天去扫墓。",
+   "tool": "schedule_event(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2027-04-05"
+   },
+   "gold_source": "ephem solar-term Qingming λ=15° (SOLAR term, not lunar)",
+   "flag": "CONTROL: 清明 is a solar term (~Apr 4-5), NOT a lunar-calendar date. Tests over-application of lunar conversion."
+  },
+  {
+   "id": "f-N01-a",
+   "category": "numeral_wan_yi",
+   "family": "internal_zero",
+   "variant_group": "f-N01",
+   "layer": "arguments",
+   "utterance_zh": "账户余额一亿零五十万。",
+   "tool": "set_amount(amount_cny: number)",
+   "expected_args": {
+    "amount_cny": 100500000
+   },
+   "gold_source": "1e8 + 50*1e4 = 100,500,000 (一亿零五十万)"
+  },
+  {
+   "id": "f-N02-a",
+   "category": "numeral_wan_yi",
+   "family": "internal_zero",
+   "variant_group": "f-N02",
+   "layer": "arguments",
+   "utterance_zh": "这笔款项十万零五百。",
+   "tool": "set_amount(amount_cny: number)",
+   "expected_args": {
+    "amount_cny": 100500
+   },
+   "gold_source": "10*1e4 + 500 = 100,500 (十万零五百)"
+  },
+  {
+   "id": "f-N04-a",
+   "category": "numeral_wan_yi",
+   "family": "internal_zero",
+   "variant_group": "f-N04",
+   "layer": "arguments",
+   "utterance_zh": "这单一万零五。",
+   "tool": "set_amount(amount_cny: number)",
+   "expected_args": {
+    "amount_cny": 10005
+   },
+   "gold_source": "1e4 + 5 = 10,005 (一万零五)"
+  },
+  {
+   "id": "f-N05-a",
+   "category": "numeral_wan_yi",
+   "family": "elliptical",
+   "variant_group": "f-N05",
+   "layer": "arguments",
+   "utterance_zh": "这批货三万五。",
+   "tool": "set_amount(amount_cny: number)",
+   "expected_args": {
+    "amount_cny": 35000
+   },
+   "gold_source": "三万五 = 三万五千 = 35,000"
+  },
+  {
+   "id": "f-N06-a",
+   "category": "numeral_wan_yi",
+   "family": "elliptical",
+   "variant_group": "f-N06",
+   "layer": "arguments",
+   "utterance_zh": "这台手机两千八。",
+   "tool": "set_amount(amount_cny: number)",
+   "expected_args": {
+    "amount_cny": 2800
+   },
+   "gold_source": "两千八 = 两千八百 = 2,800"
+  },
+  {
+   "id": "f-N07-a",
+   "category": "numeral_wan_yi",
+   "family": "elliptical",
+   "variant_group": "f-N07",
+   "layer": "arguments",
+   "utterance_zh": "这件衣服一百二块。",
+   "tool": "set_amount(amount_cny: number)",
+   "expected_args": {
+    "amount_cny": 120
+   },
+   "gold_source": "一百二 = 一百二十 = 120",
+   "flag": "MILD: '一百二' standardly 120 in money context; the 块/张 framing fixes it."
+  },
+  {
+   "id": "f-N08-a",
+   "category": "numeral_wan_yi",
+   "family": "capital",
+   "variant_group": "f-N08",
+   "layer": "arguments",
+   "utterance_zh": "发票金额：壹万贰仟元整。",
+   "tool": "set_amount(amount_cny: number)",
+   "expected_args": {
+    "amount_cny": 12000
+   },
+   "gold_source": "capital 壹万贰仟 = 12,000"
+  },
+  {
+   "id": "f-N10-a",
+   "category": "numeral_wan_yi",
+   "family": "mixed_digit",
+   "variant_group": "f-N10",
+   "layer": "arguments",
+   "utterance_zh": "这轮融资1.2亿。",
+   "tool": "set_amount(amount_cny: number)",
+   "expected_args": {
+    "amount_cny": 120000000
+   },
+   "gold_source": "1.2亿 = 120,000,000"
+  },
+  {
+   "id": "f-N12-a",
+   "category": "numeral_wan_yi",
+   "family": "long_chain",
+   "variant_group": "f-N12",
+   "layer": "arguments",
+   "utterance_zh": "总预算两亿三千零五十万。",
+   "tool": "set_amount(amount_cny: number)",
+   "expected_args": {
+    "amount_cny": 230500000
+   },
+   "gold_source": "2e8 + 3050*1e4 = 230,500,000 (两亿三千零五十万)"
+  },
+  {
+   "id": "f-N13-a",
+   "category": "numeral_wan_yi",
+   "family": "long_chain",
+   "variant_group": "f-N13",
+   "layer": "arguments",
+   "utterance_zh": "总投资十二亿三千四百五十六万七千八百。",
+   "tool": "set_amount(amount_cny: number)",
+   "expected_args": {
+    "amount_cny": 1234567800
+   },
+   "gold_source": "12e8+3456e4+7800 = 1,234,567,800"
+  },
+  {
+   "id": "f-U01-a",
+   "category": "unit_conversion",
+   "family": "units_half",
+   "variant_group": "f-U01",
+   "layer": "arguments",
+   "utterance_zh": "这包瓜子二两半，记一下重量。",
+   "tool": "set_weight(weight_kg: number)",
+   "expected_args": {
+    "weight_kg": 0.125
+   },
+   "gold_source": "2.5 liang * 0.05 = 0.125 kg (二两半)"
+  },
+  {
+   "id": "f-U02-a",
+   "category": "unit_conversion",
+   "family": "units_half",
+   "variant_group": "f-U02",
+   "layer": "arguments",
+   "utterance_zh": "这块排骨三斤半，记成公斤。",
+   "tool": "set_weight(weight_kg: number)",
+   "expected_args": {
+    "weight_kg": 1.75
+   },
+   "gold_source": "3.5 jin * 0.5 = 1.75 kg (三斤半)"
+  },
+  {
+   "id": "f-U04-a",
+   "category": "unit_conversion",
+   "family": "units_half",
+   "variant_group": "f-U04",
+   "layer": "arguments",
+   "utterance_zh": "我身高一米七五。",
+   "tool": "set_profile(height_m: number)",
+   "expected_args": {
+    "height_m": 1.75
+   },
+   "gold_source": "一米七五 = 1.75 m (height, numeral-in-unit)"
+  },
+  {
+   "id": "f-U06-a",
+   "category": "unit_conversion",
+   "family": "units_half",
+   "variant_group": "f-U06",
+   "layer": "arguments",
+   "utterance_zh": "这袋米两斤，记一下。",
+   "tool": "set_weight(weight_kg: number)",
+   "expected_args": {
+    "weight_kg": 1.0
+   },
+   "gold_source": "两斤 = 1.0 kg (1斤=0.5kg)",
+   "flag": "CONTRAST pair with f-U05: 斤 = 0.5 kg."
+  }
+ ]
+}

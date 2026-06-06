@@ -1,0 +1,13 @@
+# Core (real-model runs + computed golds)
+openai==2.41.0
+lunardate==0.2.2
+ephem==4.2.1
+
+# Statistics + figures (analysis scripts only; not needed for mock reproduce)
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+
+# NOTE: the zero-key mock reproduce (ZTL_PROVIDER=mock python src/models.py)
+# uses only the Python standard library; the pins above are for real-model
+# runs, gold generation, and the analysis/figure scripts.

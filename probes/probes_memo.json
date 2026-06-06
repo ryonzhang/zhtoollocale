@@ -1,0 +1,274 @@
+{
+ "benchmark": "ZhToolLocale-memo",
+ "reference_date": "2026-06-05",
+ "reference_weekday": "Friday",
+ "layers": [
+  "arguments"
+ ],
+ "categories": [
+  "memo_name",
+  "memo_date"
+ ],
+ "probes": [
+  {
+   "id": "m-中秋-name-a",
+   "category": "memo_name",
+   "pair": "中秋",
+   "para": "a",
+   "variant_group": "m-中秋-name",
+   "layer": "arguments",
+   "utterance_zh": "中秋节那天帮我订一桌饭。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-09-25"
+   }
+  },
+  {
+   "id": "m-中秋-date-a",
+   "category": "memo_date",
+   "pair": "中秋",
+   "para": "a",
+   "variant_group": "m-中秋-date",
+   "layer": "arguments",
+   "utterance_zh": "农历八月十五那天帮我订一桌饭。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-09-25"
+   }
+  },
+  {
+   "id": "m-中秋-name-b",
+   "category": "memo_name",
+   "pair": "中秋",
+   "para": "b",
+   "variant_group": "m-中秋-name",
+   "layer": "arguments",
+   "utterance_zh": "帮我把中秋节那天的饭订了。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-09-25"
+   }
+  },
+  {
+   "id": "m-中秋-date-b",
+   "category": "memo_date",
+   "pair": "中秋",
+   "para": "b",
+   "variant_group": "m-中秋-date",
+   "layer": "arguments",
+   "utterance_zh": "帮我把农历八月十五那天的饭订了。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-09-25"
+   }
+  },
+  {
+   "id": "m-春节-name-a",
+   "category": "memo_name",
+   "pair": "春节",
+   "para": "a",
+   "variant_group": "m-春节-name",
+   "layer": "arguments",
+   "utterance_zh": "春节那天帮我订一桌饭。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2027-02-06"
+   }
+  },
+  {
+   "id": "m-春节-date-a",
+   "category": "memo_date",
+   "pair": "春节",
+   "para": "a",
+   "variant_group": "m-春节-date",
+   "layer": "arguments",
+   "utterance_zh": "农历正月初一那天帮我订一桌饭。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2027-02-06"
+   }
+  },
+  {
+   "id": "m-春节-name-b",
+   "category": "memo_name",
+   "pair": "春节",
+   "para": "b",
+   "variant_group": "m-春节-name",
+   "layer": "arguments",
+   "utterance_zh": "帮我把春节那天的饭订了。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2027-02-06"
+   }
+  },
+  {
+   "id": "m-春节-date-b",
+   "category": "memo_date",
+   "pair": "春节",
+   "para": "b",
+   "variant_group": "m-春节-date",
+   "layer": "arguments",
+   "utterance_zh": "帮我把农历正月初一那天的饭订了。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2027-02-06"
+   }
+  },
+  {
+   "id": "m-端午-name-a",
+   "category": "memo_name",
+   "pair": "端午",
+   "para": "a",
+   "variant_group": "m-端午-name",
+   "layer": "arguments",
+   "utterance_zh": "端午节那天帮我订一桌饭。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-06-19"
+   }
+  },
+  {
+   "id": "m-端午-date-a",
+   "category": "memo_date",
+   "pair": "端午",
+   "para": "a",
+   "variant_group": "m-端午-date",
+   "layer": "arguments",
+   "utterance_zh": "农历五月初五那天帮我订一桌饭。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-06-19"
+   }
+  },
+  {
+   "id": "m-端午-name-b",
+   "category": "memo_name",
+   "pair": "端午",
+   "para": "b",
+   "variant_group": "m-端午-name",
+   "layer": "arguments",
+   "utterance_zh": "帮我把端午节那天的饭订了。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-06-19"
+   }
+  },
+  {
+   "id": "m-端午-date-b",
+   "category": "memo_date",
+   "pair": "端午",
+   "para": "b",
+   "variant_group": "m-端午-date",
+   "layer": "arguments",
+   "utterance_zh": "帮我把农历五月初五那天的饭订了。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-06-19"
+   }
+  },
+  {
+   "id": "m-元宵-name-a",
+   "category": "memo_name",
+   "pair": "元宵",
+   "para": "a",
+   "variant_group": "m-元宵-name",
+   "layer": "arguments",
+   "utterance_zh": "元宵节那天帮我订一桌饭。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2027-02-20"
+   }
+  },
+  {
+   "id": "m-元宵-date-a",
+   "category": "memo_date",
+   "pair": "元宵",
+   "para": "a",
+   "variant_group": "m-元宵-date",
+   "layer": "arguments",
+   "utterance_zh": "农历正月十五那天帮我订一桌饭。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2027-02-20"
+   }
+  },
+  {
+   "id": "m-元宵-name-b",
+   "category": "memo_name",
+   "pair": "元宵",
+   "para": "b",
+   "variant_group": "m-元宵-name",
+   "layer": "arguments",
+   "utterance_zh": "帮我把元宵节那天的饭订了。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2027-02-20"
+   }
+  },
+  {
+   "id": "m-元宵-date-b",
+   "category": "memo_date",
+   "pair": "元宵",
+   "para": "b",
+   "variant_group": "m-元宵-date",
+   "layer": "arguments",
+   "utterance_zh": "帮我把农历正月十五那天的饭订了。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2027-02-20"
+   }
+  },
+  {
+   "id": "m-重阳-name-a",
+   "category": "memo_name",
+   "pair": "重阳",
+   "para": "a",
+   "variant_group": "m-重阳-name",
+   "layer": "arguments",
+   "utterance_zh": "重阳节那天帮我订一桌饭。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-10-18"
+   }
+  },
+  {
+   "id": "m-重阳-date-a",
+   "category": "memo_date",
+   "pair": "重阳",
+   "para": "a",
+   "variant_group": "m-重阳-date",
+   "layer": "arguments",
+   "utterance_zh": "农历九月初九那天帮我订一桌饭。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-10-18"
+   }
+  },
+  {
+   "id": "m-重阳-name-b",
+   "category": "memo_name",
+   "pair": "重阳",
+   "para": "b",
+   "variant_group": "m-重阳-name",
+   "layer": "arguments",
+   "utterance_zh": "帮我把重阳节那天的饭订了。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-10-18"
+   }
+  },
+  {
+   "id": "m-重阳-date-b",
+   "category": "memo_date",
+   "pair": "重阳",
+   "para": "b",
+   "variant_group": "m-重阳-date",
+   "layer": "arguments",
+   "utterance_zh": "帮我把农历九月初九那天的饭订了。",
+   "tool": "reserve_table(date: yyyy-mm-dd)",
+   "expected_args": {
+    "date": "2026-10-18"
+   }
+  }
+ ]
+}

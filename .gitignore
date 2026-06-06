@@ -1,0 +1,34 @@
+# ---- Secrets / credentials (NEVER commit) ----
+.env
+.env.*
+*.env
+*_key*
+*_secret*
+*secret*
+*credential*
+*.pem
+*.key
+api_key*
+apikey*
+ZTL_API_KEY*
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ---- Local scratch (raw outputs are committed under results/raw/; ignore stray top-level ones) ----
+/results_*.txt
+/routing_*.json
+/figures_data.json
+/mock_out.txt
