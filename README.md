@@ -1,122 +1,97 @@
 # ZhToolLocale
 
-**Do LLM agents silently corrupt Chinese-locale values when they call tools?**
-Yes — and this benchmark measures it, detects it, and shows the fix.
+**Do AI agents act correctly when users speak Chinese?** When an agent fills a tool call, the argument *value is the action*: 转一万二 ("transfer twelve thousand") must become `transfer(12000)` — not `transfer(10002)`; 两斤苹果 ("two jin of apples") must become `order(weight_kg=1.0)` — not `2`. ZhToolLocale shows that today's LLMs **silently corrupt these values**: the JSON validates, the API returns 200, and the user finds out when the train ticket is for the wrong day. This repository is the benchmark that measures it, the detector that flags it, and the deterministic fix that prevents it.
 
-When an agent turns a Chinese request into a tool call, it must convert locale
-semantics into canonical executable arguments: `一万二` → `12000` (not `10002`),
-`两斤` → `1.0` kg (`1 斤 = 0.5 kg`), `中秋节` → `2026-09-25`. Getting this wrong
-produces a **schema-valid, executable, and silently wrong** call — invisible to
-tool-*selection* metrics and dangerous in finance/scheduling/logistics.
-ZhToolLocale isolates conversion correctness with **deterministic,
-library-computed gold answers** (no human judgment), measures it across models,
-shows that the failures are **detectable** and **deployment-relevant**, and
-demonstrates that a **deterministic converter tool** recovers capable models.
+📄 **Paper:** [Silent Locale Corruption: Diagnosing and Mitigating Chinese-Locale Semantic Failures in LLM Tool Calling](https://arxiv.org/abs/REPLACE-WITH-ARXIV-ID)
+
+---
 
 ## Headline results
 
-Accuracy on the focused set (105 probes; lunar dates + numeral nesting + units),
-canonical 6-model matrix (official `deepseek-chat`):
+Focused-set accuracy (105 probes, 95% bootstrap CIs). **Lunar-date conversion fails near-universally; numeral/unit conversion is largely solved at the top tier but fragile below.**
 
-| Model | tier-1 (23) | focused (105) | lunar | with converter tool (AVAILABLE) |
+| Model | Family | Tier-1 | Focused | Lunar |
 |---|---|---|---|---|
-| gemini-2.5-flash | 100.0% | 75.2% | 28% | **100.0%** |
-| gemini-2.5-flash-lite | 95.7% | 60.0% | 3% | 66% (→ 81% FORCED) |
-| gpt-4o-mini | 91.3% | 54.3% | 0% | **94.8%** |
-| deepseek-chat | 95.7% | **93.3%** | 81% | **100.0%** |
-| qwen2.5-7b | 78.3% | 55.9% | 3% | 54% (won't route) |
-| llama3.1-8b | 47.8% | 25.7% | 0% | 27% (won't route) |
+| deepseek-chat | DeepSeek (zh) | 95.7 | **93.3** [89–98] | 81% |
+| gemini-2.5-flash | Google | 100.0 | 75.2 [67–83] | 28% |
+| gemini-2.5-flash-lite | Google | 95.7 | 60.0 [50–70] | 3% |
+| qwen2.5:7b | Alibaba (zh) | 78.3 | 55.9 [46–65] | 3% |
+| gpt-4o-mini | OpenAI | 91.3 | 54.3 [45–64] | 0% |
+| llama3.1:8b | Meta | 47.8 | 25.7 [18–34] | 0% |
 
-**Lunar-date conversion is a near-universal failure** (only `deepseek-chat`
-clears 50%), yet a deterministic `lunar_to_gregorian` tool lifts capable models
-to 95–100% — the gap is *tool-routing*, not reasoning. The 7-8B tier (qwen,
-llama) does not adopt the tool even when instructed.
+**The fix:** a deterministic converter tool restores accuracy to **94.8–100%** — *for models that route to it*. Frontier models route voluntarily (93–99%); a 7B model cannot be made to route at all (3%, even when mandated). Deployable-tier safety must be **architectural, not prompted.** See the paper and the per-tier deployment card.
 
-![Routing gradient](figures/fig2_routing_gradient.png)
+---
 
-*Fig. 2 — baseline vs converter-AVAILABLE vs converter-FORCED, with routing% annotated.
-See [`results/FINAL_RESULTS_v2.md`](results/FINAL_RESULTS_v2.md) for the full tables, 95% bootstrap CIs, and significance tests.*
-
-## Reproduce in one command (zero API keys)
+## Run it in 30 seconds (no API key)
 
 ```bash
+git clone https://github.com/ryonzhang/zhtoollocale.git
+cd zhtoollocale
 pip install -r requirements.txt
-
-# Linux / macOS:
-ZTL_PROVIDER=mock python src/models.py
-
-# Windows (PowerShell) — set UTF-8 output first (probes/outputs contain Chinese):
-$env:PYTHONIOENCODING="utf-8"; $env:ZTL_PROVIDER="mock"; python src\models.py
+ZTL_PROVIDER=mock python src/models.py        # offline demo, zero keys
 ```
 
-The `mock` provider runs the full harness offline (built-in canned answers) so you
-can verify scoring, per-category and per-layer breakdowns end-to-end with **no
-keys and no network**. The per-probe report prints Chinese probe text, so on
-Windows set `PYTHONIOENCODING=utf-8` (above) or use a UTF-8 terminal — otherwise
-Python's default Windows code page raises a `UnicodeEncodeError` mid-report. On
-Linux/macOS this is unnecessary (stdout is already UTF-8).
-
-Run a real model (OpenAI-compatible providers; pick the probe set with `ZTL_PROBES`):
+Run a real model:
 
 ```bash
-export ZTL_PROVIDER=gemini        # gemini | openai | deepseek | ollama | ...
-export ZTL_API_KEY=sk-...          # your key (never stored)
-export ZTL_MODEL=gemini-2.5-flash
-export ZTL_PROBES=probes_focus_seed.json   # default: probes_seed.json (tier-1)
-python src/models.py
+ZTL_PROVIDER=gemini   ZTL_API_KEY=...  ZTL_MODEL=gemini-2.5-flash  python src/models.py
+ZTL_PROVIDER=deepseek ZTL_API_KEY=...  ZTL_MODEL=deepseek-chat     python src/models.py
+ZTL_PROVIDER=ollama                    ZTL_MODEL=qwen2.5:7b        python src/models.py   # local, free
 ```
 
-Providers map to base URLs in `src/models.py` (`PROVIDERS`): Gemini, OpenAI,
-DeepSeek, DashScope/Qwen, Moonshot/Kimi, Zhipu/GLM, and local Ollama. Keys are
-read from `ZTL_API_KEY` at runtime and are **never written to any file**.
+Supported providers (OpenAI-compatible): `gemini`, `openai`, `deepseek`, `dashscope` (Qwen), `moonshot` (Kimi), `zhipu` (GLM), `ollama` (local).
 
-## Mint fresh, contamination-resistant probes
+---
 
-Golds are *computed*, not memorized, so you can regenerate the whole benchmark for
-**any future reference date** — defeating training-data contamination:
+## A benchmark that can't go stale
+
+ZhToolLocale is a **generator, not a fixed dataset.** Every gold value is *computed* — lunar dates via `lunardate`, solar terms via an ephemeris, 万/亿 numerals and 市制 units via deterministic parsers — so the benchmark mints fresh, gold-verified probes for **any reference date**. This makes it **contamination-resistant by construction**: a model cannot have memorized a probe that didn't exist yet.
 
 ```bash
-python src/generators/gen_focused.py    # lunar via lunardate, numerals/units by closed form
-python src/generators/gen_memo.py       # matched name/date memorization pairs
-python src/generators/compute_golds.py  # prints the gold-verification table
+python src/generate.py --reference-date 2027-03-01 --n 300   # mint a fresh probe set
 ```
 
-Each generator prints a gold-verification table before writing `probes/*.json`,
-so every answer is auditable against the source library (`lunardate`, `ephem`).
+**Twelve categories**, three mechanisms: calendar systems (relative + lunar dates, fixed-date controls), numeral semantics (万/亿 grouping, internal zeros, capital 大写, mixed digit-character), and quantity/format (市制 units incl. fractional 半, classifiers, names, addresses, full-width, code-switching).
 
-## Key design points
+---
 
-- **Computed golds, not human labels** — lunar dates via `lunardate`, the 清明 solar
-  term via `ephem`, numerals/units by closed-form decomposition. Fully reproducible.
-- **ERR ≠ FAIL** — API errors / empty outputs are scored `[ERR]` and excluded from
-  both numerator and denominator, so infrastructure noise never inflates error rates.
-- **Pre-registration** — ambiguous probes are flagged *before* runs; the one
-  genuinely two-valued probe (`f-L07`, 明年腊八) was dropped by pre-registered rule.
-- **Paraphrase triplets** — every focused probe appears in 3 phrasings, enabling a
-  self-consistency metric and a disagreement-based error detector.
-- **Matched-pair causal control** — festival-name vs identical-lunar-date pairs test
-  recall-vs-conversion directly (result: no memorization advantage; see paper).
+## Design principles
+
+- **Computed golds** — no eyeballed answers; everything from a library or a native-speaker check.
+- **ERR ≠ FAIL** — API errors are excluded, never scored as model failures.
+- **Paraphrase triplets** — every probe in three phrasings; self-consistency is a measured quantity.
+- **Pre-registered audit** — ambiguous probes flagged before runs; cross-model consensus against a gold triggers re-verification of the *gold*. (This protocol refuted our own initial hypothesis — see the paper.)
+- **Full changelog** — every raw-to-canonical number is traceable in `results/`.
+
+---
+
+## Repository layout
+
+```
+probes/      probe sets (seed, hard, focused, lunar, memorization pairs) + the generator's output schema
+src/         harness.py, models.py (provider adapter), converters, generate.py
+results/     FINAL_RESULTS_v2.md (canonical), raw outputs, changelog
+figures/     paper figures (lunar decomposition, routing gradient, memorization null)
+repro_manifest.md   pinned model versions, endpoints, access dates, library versions
+```
+
+---
 
 ## Citation
 
 ```bibtex
 @misc{zhang2026zhtoollocale,
-  title  = {ZhToolLocale: Measuring Chinese-Locale Argument Corruption in Tool-Calling LLMs},
-  author = {Zhang, Ruiyang},
+  title  = {Silent Locale Corruption: Diagnosing and Mitigating Chinese-Locale Semantic Failures in LLM Tool Calling},
+  author = {Ruiyang Zhang},
   year   = {2026},
-  note   = {arXiv:XXXX.XXXXX},
+  eprint = {REPLACE-WITH-ARXIV-ID},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
   url    = {https://github.com/ryonzhang/zhtoollocale}
 }
 ```
 
-Paper: _link placeholder (arXiv id to be added)_. See [`CITATION.cff`](CITATION.cff).
-
-## Requirements
-
-See [`requirements.txt`](requirements.txt): `openai`, `lunardate`, `ephem` (core);
-`numpy`, `scipy`, `matplotlib` (stats + figures). Reproducibility pins in
-[`repro_manifest.md`](repro_manifest.md).
-
 ## License
 
-Code: MIT ([`LICENSE`](LICENSE)). Probes & data: CC-BY-4.0 ([`DATA_LICENSE`](DATA_LICENSE)).
+Code: [MIT](LICENSE). Benchmark data: [CC-BY-4.0](DATA_LICENSE).

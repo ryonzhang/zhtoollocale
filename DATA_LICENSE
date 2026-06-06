@@ -1,18 +1,17 @@
-ZhToolLocale benchmark data (probes/ and results/) — Creative Commons
-Attribution 4.0 International (CC-BY-4.0).
+ZhToolLocale benchmark data (probe sets, golds, generated outputs)
+Copyright (c) 2026 Ruiyang Zhang
 
-Copyright (c) 2026 Ruiyang Zhang.
+The benchmark data in this repository (the probes/, results/ and generated
+gold values) is licensed under the Creative Commons Attribution 4.0
+International License (CC-BY-4.0).
 
-You are free to share and adapt this data for any purpose, including
-commercially, provided you give appropriate credit (cite the paper /
-repository), provide a link to the license, and indicate if changes were made.
+You are free to share and adapt the data for any purpose, provided you give
+appropriate credit by citing:
+
+  Ruiyang Zhang. "Silent Locale Corruption: Diagnosing and Mitigating
+  Chinese-Locale Semantic Failures in LLM Tool Calling." 2026.
+  https://github.com/ryonzhang/zhtoollocale
 
 Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
-Human-readable summary: https://creativecommons.org/licenses/by/4.0/
 
-Attribution:
-  Ruiyang Zhang, "ZhToolLocale: Measuring Chinese-Locale Argument Corruption in
-  Tool-Calling LLMs", 2026. https://github.com/ryonzhang/zhtoollocale
-
-NOTE: The CODE in this repository (src/, *.py) is licensed under MIT (see LICENSE),
-not CC-BY-4.0.
+(Code in this repository is licensed separately under the MIT License; see LICENSE.)

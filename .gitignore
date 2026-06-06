@@ -32,3 +32,6 @@ Thumbs.db
 /routing_*.json
 /figures_data.json
 /mock_out.txt
+
+# generator output
+probes/probes_generated.json
